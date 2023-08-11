@@ -23,7 +23,7 @@ The dataset was obtained from the [UC Irvine Machine Learning Repository](https:
 ## Data Transformation and Cleaning ###
 The dataset was transformed in the following ways: 
 + Data was at first investigated to check for missing values, missing rows or missing columns
-+ The column were labelled in the following ways, the first four (4) columns were labelled `Outcome`, `Cluster ID`, `Game mode` and ` Game type` respectively. The remaining 113 columns representing the heros was labelled numerically from 1 to 113. 
++ The column were labelled in the following ways, the first four (4) columns were labelled `Outcome`, `Cluster ID`, `Game mode` and ` Game type` respectively. The remaining 113 columns representing the heros was labelled numerically from 1 to 113..
 
 
 
