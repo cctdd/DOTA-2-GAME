@@ -14,3 +14,18 @@ The data evaluated in this project consist of 117 feautures in total. Each featu
 ### Problem Statement ###
 ![win-lose-ss-1920](https://github.com/cctdd/DOTA-2-GAME/assets/122665014/58bd7d20-76f0-4b3f-b793-178f81859d56)
 The aim of this work is to train several models with the training dataset and test the accuracy of these trained model on the testing dataset. Basically, after training these models, a test on how accurate these models are in predicting which team wins the game using 116 of the the features provided, then checking the result of this test against the original **outcome** of the game. 
+
+### Data Sourcing ###
+The dataset was obtained from the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/dataset/367/dota2+games+results) It contained an already seperated training and testing datasets as follows
++ **Testing dataset** : 10295 rows and 117 attributes, no missing values in each row and columns
++ **Training dataset** : 92650 rows and 117 attributes, no missing values in each row and columns
+
+## Data Transformation and Cleaning ###
+The dataset was transformed in the following ways: 
++ Data was at first investigated to check for missing values, missing rows or missing columns
++ The column were labelled in the following ways, the first four (4) columns were labelled `Outcome`, `Cluster ID`, `Game mode` and ` Game type` respectively. The remaining 113 columns representing the heros was labelled numerically from 1 to 113. 
+
+
+
+
+
