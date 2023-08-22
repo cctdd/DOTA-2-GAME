@@ -25,7 +25,34 @@ The dataset was transformed in the following ways:
 + Data was at first investigated to check for missing values, missing rows or missing columns
 + The column were labelled in the following ways, the first four (4) columns were labelled `Outcome`, `Cluster ID`, `Game mode` and ` Game type` respectively. The remaining 113 columns representing the heros was labelled numerically from 1 to 113..
 
-### Modelling ### 
+### Exploratory Analysis ### 
+An Exploratory analysis of the data was done using Microsoft PowerBI. The analysis was made on the contribution of Game Mode and Game Type on the Outcome of the game. The result is as shown in the image below: 
+
+![Visualization3_page-0001](https://github.com/cctdd/DOTA-2-GAME/assets/122665014/598de10e-c6b7-4e4b-864a-ca8266017ea2)
+It can be observed that Game mode which has only three categories (1,2,3) is such that Game mode 1 has the least influence to the outcome of the game and is also only played alongside Game Type 6 and 9. Game mode 2 has the most played population and it is the only mode that was played with all the possible Game Types followed by Game mode 3. 
+
+### Unsupervised Learning ### 
+K-Means Clustering was performed on the dataset to try to see a relationship between the features.Silhouette scores was also calculated to check if K is right.  The K value was varied between 5 to 20. The visualization of K-means and Silhouette score at K=5 and at K=20 obtained as shown below respectively:
+![siholet 5](https://github.com/cctdd/DOTA-2-GAME/assets/122665014/a30b5c18-f5d1-4122-9a4d-e78caa54c55a)
+
+![Silholet](https://github.com/cctdd/DOTA-2-GAME/assets/122665014/79caade2-60b1-4209-b7d8-c3c15850bdab)
+
+The Silhouette scores obtained at K=5 and K=20 are both near zero ( `0.0026` and `0.0057` ) it indicates overlapping or ambiguous clusters. It means that the samples could be assigned to multiple clusters with similar distances. Which suggests a lack of distinct separation between clusters and may indicate that the clustering algorithm didn't perform well in separating the data points or there are no distinct separation between the data points.
+
+## Supervised Learning ##
+In this project, three different models was used to perform the predictive analysis on the dataset given. Each model was evaluated with the incusion of its accuracy scores and a reliability evaluation of each model in terms of its suitability was also considered.
+
+### 1. Logistic Regression Model ###
+ Prior to applying the Logistic regression model, a gridsearch was performed to obtain the best `hyperparameters` out of the hyperparameters: 
+ + penalty
+ + l1_ratio
+ + solver
+ + tol
+ After the GridSearch, the model was trained on the training set and tested on the test set, the confusion matrix is as given below; 
+
+
+
+
 
 
 
