@@ -66,18 +66,29 @@ Also the confusion matrix for the predicted outcome of the training dataset is a
 #### Evaluating quality of model on the Test Data ####
 Below are the most informative evaluation of the model's quality on the test data;
 + Accuracy Score: `0.598` : This indicates a fair accuracy of the model in predicting correctly the outcome of the games in the testing dataset.
-+ Precision :
- Outcome Value    | Precision 
++ Precision : The table gives the precision of the model in predicting that team 1 wins or loses the game;
+
+Outcome Value    | Precision 
  -------------|-------------|
 -1 | 0.58 
  1 | 0.61 
- | Training Dataset      | Predicted positive           | Predicted Negative  |
-| ------------- |:-------------:| -----:|
-| **Actual Positve**      |22546 |21322 |
-|    **Actual Negative**    | 15653     |  33129 |
-   
 
+ #### Evaluating quality of model on the Training Data ####
+ + Accuracy Score: `0.601` : This indicates a fair accuracy of the model in predicting correctly the outcome of the games in the training dataset.
++ Precision : The table gives the precision of the model in predicting that team 1 wins or loses the game;
 
+Outcome Value    | Precision 
+ -------------|-------------|
+-1 | 0.59 
+ 1 | 0.61 
+
+Considering the values of the balanced accuracy and the accuracy score, one can conclude that there is no overfitting in the logistic regression model.
+
+#### Feauture Importance ####
+From the model, the first most important or influencing features and the last 5 most important features are plotted and shown below, these features are ranked based on the coefficient associated with each of them in the linear regression model. Hence the magnitude of the coefificient reflects the strenght of the relationship between the specific feature and the target variable. 
+![feauture importance](https://github.com/cctdd/DOTA-2-GAME/assets/122665014/9628394f-394d-4edc-ad37-94bd7aa16ddf)
+
+### 2.  
 
 
 
