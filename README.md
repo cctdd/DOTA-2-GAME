@@ -88,14 +88,39 @@ Considering the values of the balanced accuracy and the accuracy score, one can 
 From the model, the first most important or influencing features and the last 5 most important features are plotted and shown below, these features are ranked based on the coefficient associated with each of them in the linear regression model. Hence the magnitude of the coefificient reflects the strenght of the relationship between the specific feature and the target variable. 
 ![feauture importance](https://github.com/cctdd/DOTA-2-GAME/assets/122665014/9628394f-394d-4edc-ad37-94bd7aa16ddf)
 
-### 2.  
+### 2. DECISION TREE ###
+#### Decision tree without pruning ####
+The decision tree model was also applied on the dataset. The Tree obtained (non-penalized) is as shown below;
+![Tree without prune](https://github.com/cctdd/DOTA-2-GAME/assets/122665014/08de0125-1079-4f91-b15a-553e5215398b)
 
+The complexity of this tree can be immediately observed and these can be due to;
++ Overfitting
++ Interaction or combinations of features that significantly incluence the target variable (outcome)
++ Features with high variability
++ Complex realtionship between data
+In the case of this dataset, the first and the second reason is the most possible factor influencing the complexity of the tree.
+The training accuracy of the model is `1.0` and the testing accuracy is `0.45`. This result clearly shows overfitting in the model.
 
+#### Decision tree with pruning ####
+Due to the complexity of the obtained tree a grid search was made to obtain the best "Cost-Complexity Pruning Alpha (ccp_alpha)" amongst the values `1, 0, 0.1, 0.5, 0.01, 0.001` The pruning process is a technique used to prevent overfitting by simplifying the decision tree. The cca_alpha is a regularization parameter that controls the trade-off between tree complexity and its accuracy on the training data. The tree obtained after pruning is as shown below; 
+![Tree with prune](https://github.com/cctdd/DOTA-2-GAME/assets/122665014/015393ab-fe0f-42dc-a78d-824d56a97754)
+The best alpha obtained was 0.001.
+The training accuracy of the model is `0.899` and the testing accuracy is `0.541`. 
+The balance accuracy of the model is `0.899` and the testing balance accuracy is `0.541`.
+This result also shows overfitting of the DECISION TREE model.
 
+### 3. Support Vector Model (SVM) ###
+The SVM was applied to the dataset and the confusion matrix obtained is as shown below;
+ ![Svm](https://github.com/cctdd/DOTA-2-GAME/assets/122665014/3393f6a1-a2f0-4733-86fb-064ffc033619)
 
+The following are the results obtained;
+Training Accuracy: 0.778
+Training Balanced Accuracy: 0.774
+Training Recall: 0.778
+Training Precision: 0.779
+Testing Accuracy: 0.585
+Testing Balanced Accuracy: 0.580
+Testing Recall: 0.585
+Testing Precision: 0.583
 
-
-
-
-
-
+The results also show overfitting of the model. 
