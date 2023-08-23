@@ -48,7 +48,39 @@ In this project, three different models was used to perform the predictive analy
  + l1_ratio
  + solver
  + tol
- After the GridSearch, the model was trained on the training set and tested on the test set, the confusion matrix is as given below; 
+ After the GridSearch, the model was trained on the training set and tested on the test set.  The confusion matrix for the predicted outcome of the testing dataset is as shown below;
+
+| Testing Dataset      | Predicted positive           | Predicted Negative  |
+| ------------- |:-------------:| -----:|
+| **Actual Positve**      | 2475|2317 |
+|    **Actual Negative**    | 1819     |  3683 |
+
+Also the confusion matrix for the predicted outcome of the training dataset is as shown below;
+
+| Training Dataset      | Predicted positive           | Predicted Negative  |
+| ------------- |:-------------:| -----:|
+| **Actual Positve**      |22546 |21322 |
+|    **Actual Negative**    | 15653     |  33129 |
+
+
+#### Evaluating quality of model on the Test Data ####
+Below are the most informative evaluation of the model's quality on the test data;
++ Accuracy Score: `0.598` : This indicates a fair accuracy of the model in predicting correctly the outcome of the games in the testing dataset.
++ Precision :
+ Outcome Value    | Precision 
+ -------------|-------------|
+-1 | 0.58 
+ 1 | 0.61 
+ | Training Dataset      | Predicted positive           | Predicted Negative  |
+| ------------- |:-------------:| -----:|
+| **Actual Positve**      |22546 |21322 |
+|    **Actual Negative**    | 15653     |  33129 |
+   
+
+
+
+
+
 
 
 
