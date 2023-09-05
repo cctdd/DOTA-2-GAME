@@ -1,4 +1,4 @@
-# DOTA-2-GAME
+ # DOTA-2-GAME
 ![dota2_social](https://github.com/cctdd/DOTA-2-GAME/assets/122665014/d51dc34b-b538-4eff-85b4-6bd7dbf26650)
 ### INTRODUCTION ###
 Dota 2 game is a computer game involving 2 teams of 5 players each. Each team defends itself against enemy attack from the opposing team. Each player chooses a unique hero and there are 113 possible set of heros to choose from. Each hero has a particular set of feature or characteristics that make it special and unique to other set of heros. Once a player from any team chooses a particular hero, no other player can choose that hero. 
@@ -124,3 +124,6 @@ Testing Recall: 0.585
 Testing Precision: 0.583
 
 The results also show overfitting of the model. 
+
+## Conclusion ##
+The result from the analysis shows the Linear Regression Model makes the best prediction with negligible overfitting. Decision Tree Model and SVM gave a high accuracy but had a very high overfitting which shows the model is not suitable in predicting new dataset. 
